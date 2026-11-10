@@ -473,5 +473,62 @@
       const pickup=$('#pickupDate');pickup.min=new Date().toISOString().split('T')[0];
     })();
   </script>
+
+<!-- Drive2Gig Rental Application Tile -->
+<a href="/application/" class="rental-tile">
+  <h2>Complete Your Rental Application</h2>
+  <p>
+    Apply online, upload documents,
+    and electronically sign.
+  </p>
+  <span>Start Rental Application →</span>
+</a>
+
+
+<style>
+.rental-tile {
+  display: block;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px 25px;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(135deg, #081828, #123b49);
+  border: 2px solid #4be3c5;
+  border-radius: 22px;
+  color: white;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+  transition: transform .2s, box-shadow .2s;
+}
+.rental-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0,0,0,.35);
+}
+.rental-tile h2 {
+  font-size: 32px;
+  margin: 15px 0;
+  color: white;
+}
+.rental-tile p {
+  color: #d2e6ed;
+  font-size: 17px;
+}
+.rental-tile span {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 16px 32px;
+  background: #4be3c5;
+  border-radius: 40px;
+  color: #071828;
+  font-weight: 800;
+}
+@media (max-width: 600px) {
+  .rental-tile {
+    margin: 25px 12px;
+    padding: 30px 18px;
+  }
+}
+</style>
+
 </body>
 </html>
