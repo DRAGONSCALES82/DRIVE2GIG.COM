@@ -563,79 +563,7 @@
 </style>
 
 
-<!-- START DRIVE2GIG CHRISTMAS DECORATIONS -->
-<style>
-#d2g-christmas {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
-  overflow: hidden;
-}
 
-/* Small Christmas lights */
-#d2g-christmas .lights {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background:
-    radial-gradient(circle, #ffe5a4 0 3px, transparent 4px)
-      0 0 / 70px 10px repeat-x,
-    radial-gradient(circle, #4be3c5 0 3px, transparent 4px)
-      35px 0 / 70px 10px repeat-x;
-  opacity: 0.85;
-}
-
-/* Corner decorations */
-#d2g-christmas .corner {
-  position: absolute;
-  top: 16px;
-  font-size: 23px;
-  opacity: 0.85;
-}
-#d2g-christmas .left { left: 13px; }
-#d2g-christmas .right { right: 13px; }
-
-/* Subtle snowflakes */
-#d2g-christmas .flake {
-  position: absolute;
-  top: 56px;
-  font-size: 18px;
-  color: #b7f6ff;
-  opacity: 0.65;
-}
-#d2g-christmas .flake-one { left: 3%; }
-#d2g-christmas .flake-two { right: 3%; }
-
-#d2g-christmas[hidden] {
-  display: none;
-}
-
-@media(max-width:600px) {
-  #d2g-christmas .corner { font-size: 17px; }
-  #d2g-christmas .flake { font-size: 13px; }
-}
-</style>
-
-<div id="d2g-christmas" aria-hidden="true">
-  <div class="lights"></div>
-  <span class="corner left">🎄</span>
-  <span class="corner right">🎄</span>
-  <span class="flake flake-one">❄</span>
-  <span class="flake flake-two">❄</span>
-</div>
-
-<script>
-  // CHANGE true TO false AFTER CHRISTMAS
-  const DRIVE2GIG_CHRISTMAS_DECOR_ON = true;
-
-  document.getElementById(
-    "d2g-christmas"
-  ).hidden = !DRIVE2GIG_CHRISTMAS_DECOR_ON;
-</script>
-<!-- END DRIVE2GIG CHRISTMAS DECORATIONS -->
 
 </body>
 </html>
