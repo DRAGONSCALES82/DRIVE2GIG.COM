@@ -1,0 +1,1 @@
+Insert your genuine Google Maps screenshot in this folder as map-screenshot.png. The homepage shows it automatically when the image is present. Clicking the image opens Google Maps. No iframe is used. Keep all existing website assets in your repository.
